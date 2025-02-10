@@ -112,7 +112,7 @@ header {
   box-shadow: none; 
   margin-right: 50px;
 }
- 
+
 #about h2 {
   border: 1px solid #4b4949; 
   padding: 5px 10px; 
@@ -156,28 +156,43 @@ p {
   color: #666;
 }
 
-/* Projects */
 .project-card {
   background-color: #f7f7f7;
   padding: 20px;
   margin-bottom: 20px;
   color: #333;
-  max-width: 550px;
+  max-width: 100%;
   margin: auto;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.view-project-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto; /* Changed margin-top to margin and added auto */
+  text-align: center;
+  text-decoration: none;
 }
 
-.project-card:hover {
-  transform: scale(1.02);
+.view-project-btn a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.project-card img {
-  width: 100%;
-  max-width: 280px;
-  margin-bottom: 15px;
+.view-project-btn:hover {
+  background-color: #333;
 }
+
 #projects h2 {
   border: 1px solid #4b4949; 
   padding: 5px 10px; 
@@ -189,7 +204,7 @@ p {
 /* Skills */
 #skills .skills-container {
   display: flex;
-  flex-direction: row;
+
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
